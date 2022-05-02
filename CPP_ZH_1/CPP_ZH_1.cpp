@@ -6,10 +6,13 @@
 
 int main()
 {
-    AjandekKosarKatalogus ak;
-    ak.Beolvas("kosarak.txt");
+    AjandekKosarKatalogus akk;
+    akk.Beolvas("kosarak.txt");
    
-    std::cout << ak;
+    std::cout << akk;
+
+   AjandekKosar ak = akk.Keres("Normal");
+   std::vector<AjandekKosar> vector = akk.melyikTartalmaz("Csokolade");
 }
 
 

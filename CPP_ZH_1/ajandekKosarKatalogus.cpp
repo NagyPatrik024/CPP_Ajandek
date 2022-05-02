@@ -14,9 +14,9 @@ void AjandekKosarKatalogus::UjAjandekKosar(AjandekKosar kosar)
 
 
 
-AjandekKosar AjandekKosarKatalogus::Keres(std::string kosarneve) const
+AjandekKosar& AjandekKosarKatalogus::Keres(std::string kosarneve)
 {
-	for (const auto& kosar : mKosarak)
+	for (auto& kosar : mKosarak)
 	{
 		if (kosar.KosarNeveGetter() == kosarneve)
 		{
